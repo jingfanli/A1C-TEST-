@@ -20,7 +20,7 @@ void main(void)
 	uint16_t num1=0;
 	i=0;
         uint16 a=0;
-        uint16 b=0;
+        uint16 b=0;  
 	
 	
 	Drv_InitializeClock();

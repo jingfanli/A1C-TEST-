@@ -47,6 +47,8 @@ static uint8_t speed=0;
 static uint8_t send_flag=0;
 static uint8_t tick_num_send=0;
 
+static uint16_t pwm_time=0;
+
 
 void gpio_init(void)
 {
@@ -328,7 +330,7 @@ int TestHA1c_process(void)
 
 	pulsenum=0;
 	tempnum=0;
-	
+	pwm_time=0;
 	clear_etrcnt=0;
 	ready_flag=DrvGPIO_Read(Button_start);
 	if(ready_flag==0)
@@ -359,19 +361,28 @@ int TestHA1c_process(void)
 						}
 					if(clear_etr()==FUNCTION_SUCCESS)
 						{
+						pwm_time=0;
 						locacteB = DrvGPIO_Read(locateB);
 							while(locacteB==0)
 								{
-								
+								if(pwm_time<1000)
+									
 								PWM_MOT(4);
-
+								else 
+									
+								PWM_MOT(3);
+                                //PWM_MOT(3);
 								TIM2_PULSE_CLAC(&pulsenum);
 
 						if(send_flag)
 							{
+							if(pwm_time>=1000)
+								{
 							ledvalsend();
+								}
 							send_flag=0;
 							tick_num_send=0;
+							pwm_time++;
 							}
 				
 
@@ -396,6 +407,7 @@ int TestHA1c_process(void)
 								//mot_drive(Clockwise);
 								locacteB = DrvGPIO_Read(locateB);
 								}
+							pwm_time=0;
 							//DrvGPIO_Clear(LED1);
 							//DrvGPIO_Clear(LED2);
 							locacteA = DrvGPIO_Read(locateA);

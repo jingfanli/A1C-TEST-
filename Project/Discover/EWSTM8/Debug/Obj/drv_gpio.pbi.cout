@@ -1,22 +1,22 @@
-"F:\A1C-TEST-重建项目\DRIVERS\SRC\drv_gpio.c"
+"F:\A1C-TEST-\DRIVERS\SRC\drv_gpio.c"
 -std=c99
 -ferror-limit=100
 -I
-F:\A1C-TEST-重建项目\Project\Discover\EWSTM8\..\inc
+F:\A1C-TEST-\Project\Discover\EWSTM8\..\inc
 -I
-F:\A1C-TEST-重建项目\Project\Discover\EWSTM8\..\..\..\Libraries\STM8L15x_StdPeriph_Driver\inc
+F:\A1C-TEST-\Project\Discover\EWSTM8\..\..\..\Libraries\STM8L15x_StdPeriph_Driver\inc
 -I
-F:\A1C-TEST-重建项目\Project\Discover\EWSTM8\..\..\..\DRIVERS\INC
+F:\A1C-TEST-\Project\Discover\EWSTM8\..\..\..\DRIVERS\INC
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 7.0\stm8\inc
 -I
 C:\Program Files\IAR Systems\Embedded Workbench 7.0\stm8\inc\c
 -I
-F:\A1C-TEST-重建项目\Project\Discover\inc
+F:\A1C-TEST-\Project\Discover\inc
 -I
-F:\A1C-TEST-重建项目\Libraries\STM8L15x_StdPeriph_Driver\inc
+F:\A1C-TEST-\Libraries\STM8L15x_StdPeriph_Driver\inc
 -I
-F:\A1C-TEST-重建项目\DRIVERS\INC
+F:\A1C-TEST-\DRIVERS\INC
 -DSTM8L15X_HD=1
 -D__CHAR_BITS__=8
 -D__CHAR_MAX__=0xff
@@ -231,7 +231,7 @@ F:\A1C-TEST-重建项目\DRIVERS\INC
 -D__IAR_COMPILERBASE__=594189
 -D_GOANNA=1
 -D__DATE__="Aug 11 2017"
--D__TIME__="11:15:35"
+-D__TIME__="14:39:11"
 -D__STDC__=1
 -D__STDC_VERSION__=199901L
 -D__STDC_HOSTED__=1
